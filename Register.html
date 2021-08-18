@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+     body{
+   background-image: url(img/sign\ up.jpg);
+   background-size: cover;
+   
+   
+}
+
+.topnav{ 
+
+background: rgba(0,0,0,.5);
+overflow: hidden;
+cursor: pointer;
+width: 100%;
+color: rgb(155, 155, 155);
+
+} 
+
+.topnav a {
+float: left;
+display: block;
+color: #d5c5c5;
+text-align: center;
+padding:10px 60px;
+text-decoration: none;
+font-size: 24px;
+font-family: sans-serif;
+}
+
+
+a:hover{
+  background-color: rgba(54, 48, 48, 0.734);
+}
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#icon{
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    width: 30px;;
+}
+#search {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    border: none;
+    background:rgba(0, 0, 0, 0.088) ;
+    color:white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    
+}
+
+
+h1{
+    text-align: center;
+    color: white; 
+    padding: 15px;
+} 
+form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,30%);
+    width: 800px;
+    height: 500px;
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 300px;
+} 
+.leftbox li{
+    padding: 15px; 
+    color: white;
+}
+.leftbox{ 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 25%;
+    padding: 15px;
+   
+}
+.rightbox{
+
+    position: absolute;
+    top:20px;
+    left: 200px;
+    width: 75%;
+    padding: 15px; 
+}
+input ,textarea{
+    padding: 15px;
+    width: 500px;
+    background-color: rgba(253, 252, 252, 0.479);
+    border: none;
+    outline: none;
+    color: white;
+}
+::placeholder{
+    color: rgb(248, 226, 226);
+} 
+[value=submit]{
+    position: absolute;
+    top: 350px;
+    left: 390px;
+    width: 130px;
+    height: 35px;
+    background: #0094ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 0px;
+} 
+[value=submit]:hover{
+    background-color: white;
+    color:#0094ff ;
+}
+
+
+
+    </style>
+</head>
+<body> 
+    <div class="topnav"> 
+
+        <ul>
+            
+            
+            <li><a href="signup.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+             <li><input type="search" name="search" id="search"></li>
+            <li><a href="#"><img src="https://cdn.iconscout.com/icon/free/png-64/search-find-zoom-large-small-zoomin-zoomout-9-19765.png" alt="1" id="icon"></a></li>
+           
+            
+
+        </ul> 
+
+        
+
+
+    </div> 
+    <h1>Register Page</h1> <br>
+    <form>
+     <div class="leftbox">
+         <ul>
+             <li>First Name</li>
+             <li>Last Name</li>
+             <li>Country</li>
+             <li>Subject</li>
+         </ul>
+     </div>
+     <div class="rightbox">
+      <input type="text" name="fname" id="fname" placeholder="Your Name"><br>
+      <input type="text" name="lname" id="lname" placeholder="Your Last Name"><br>
+         <input list="countrys" name="cuntrys" placeholder="Choose your Country"><br>
+                <datalist id="countrys">
+                    <option value="Sweden">
+                    <option value="Germany">
+                    <option value="USA">
+                    <option value="France">
+                    <option value="Italy">
+                    <option value="Japan">
+                    <option value="China">
+                </datalist>
+
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="write something.."></textarea> 
+        
+        <input type="button" value="submit">
+
+
+
+
+
+     </div>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

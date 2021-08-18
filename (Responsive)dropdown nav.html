@@ -1,0 +1,108 @@
+<!-- responsive drop down Nav-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Nav</title>
+    <style>
+        *{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgb(59, 164, 255);
+ 
+}
+
+nav ul{
+    list-style: none;
+
+    position: relative;
+}
+
+nav ul li  {
+    display: inline-block;
+    z-index: 20 !important;
+
+}
+nav ul li:hover{
+    background-color: rgb(30, 82, 179);
+}
+ul li a ,.dropdown li a{
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+
+}
+.dropdown-container:hover .dropdown {
+   visibility: visible;
+    top:34px;
+   opacity: 1;
+}
+
+
+.dropdown li:hover{
+    background-color: rgb(30, 82, 179);
+}
+.dropdown{
+    background-color: rgb(59, 164, 255);
+    position: absolute;
+    top:0px;
+    visibility:hidden;
+    z-index: -1;
+    opacity:0;
+    transition: top 0.5s, opacity 0.5s,visibility 0.5s ease-in;
+}
+.dropdown li{
+    display: block;
+}
+
+@media screen and  (max-width : 600px) {
+        ul li{ 
+            display: block !important;
+        }
+        .dropdown{
+            background-color: rgb(59, 164, 255);
+            position: relative;
+            top:0px;
+            visibility:visible;
+            padding-left: 20px;
+            z-index: 2;
+            opacity:1;
+            transition: top 0.5s, opacity 0.5s,visibility 0.5s ease-in;
+        }
+        .dropdown li{
+            display: inline-block !important;
+        }
+        .dropdown-container:hover .dropdown {
+           display: block;
+             top:0px !important;
+
+         }
+
+}
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown-container"><a href="#">Contact</a> 
+                <ul class="dropdown">
+                    <li><a href="#">item1</a> </li>
+                    <li><a href="#">item2</a></li>
+                    <li><a href="#">item3</a></li>
+
+                 </ul>
+            </li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

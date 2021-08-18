@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(img/sign\ up.jpg);
+   background-size: cover;
+   
+   
+}
+h2{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+font-size:xx-large;
+}
+
+.topnav{ 
+
+    background: rgba(0,0,0,.5);
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    color: rgb(155, 155, 155);
+
+} 
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #d5c5c5;
+    text-align: center;
+    padding:10px 60px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+  
+
+  a:hover{
+      background-color: rgba(54, 48, 48, 0.734);
+  }
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,30%);
+    width: 350px;
+    height: 420px;
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 300px;
+} 
+h2{
+    text-align: center;
+    color: seashell;
+    padding-top: 50px;
+} 
+
+#logo{
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: -12%;
+} 
+
+input[type="text"],[type="password"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #0094ff;
+    background: none;
+    color: white;
+    padding: 5px;
+    margin-left: 25px;
+    
+}
+
+input[type="text"]{
+    top: 140px;
+    bottom: 50px;
+
+}
+[type="password"]{
+    top: 210px;
+    bottom: 50px;
+}
+
+::placeholder{
+    color: rgb(248, 226, 226);
+} 
+
+ .info{
+    position: absolute;
+    top: 300px;
+    left: 20px; 
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    
+} 
+
+[value=login]{
+    position: absolute;
+    top: 305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    background: #0094ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+} 
+
+[value=login]:hover{
+    background-color: white;
+    color:#0094ff ;
+}
+
+p{
+    position: absolute;
+    top: 380px;
+    left: 30px;
+    color: rgb(248, 239, 239); 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+p:hover{
+    color: #0094ff;
+    cursor: pointer;
+    
+}
+#search{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    border: none;
+    background:rgba(0, 0, 0, 0.088) ;
+    color:white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    
+}
+#searchbox{
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    width: 30px;;
+}

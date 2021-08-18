@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:auto;
+        }
+        .header{
+            width: 100%;
+            background-color:background: #555559;
+            background: -moz-linear-gradient(top, #555559 0%, #BDBDC2 50%, #D3D3DE 100%);
+            background: -webkit-linear-gradient(top, #555559 0%, #BDBDC2 50%, #D3D3DE 100%);
+            background: linear-gradient(to bottom, #555559 0%, #BDBDC2 50%, #D3D3DE 100%);
+            
+        }
+        .header img{
+            height:100px;
+
+        }
+        .header h3{
+            position: absolute;
+            right: 10px ;
+            top: 50px;
+            color: #d9d9d9;
+            background: #e8e8e800;
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        } 
+
+        .header nav{
+            display: inline-block;
+            width: 100% auto;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        .header nav a{
+           
+            text-decoration: none;
+            border-left: 2px solid;
+            border-color: rgb(153, 153, 153);
+            margin: 20px;
+            padding: 5PX;
+            color: #FFFFFF;
+             background: #ffffff00;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+           
+        
+        }
+        .header nav a:first-child{
+            border: none;
+        }
+        .header nav a:hover{
+            color: black;
+        }
+        .main-container{
+            background-color: rgb(49, 41, 41);
+            height: 80vh;
+            width: 100%;
+        } 
+
+        .left-box{
+            position: relative;
+            top:15px;
+            left: 15px;
+            width: 42%;
+        }
+
+         .right-box{
+            width: 50%;
+            position: absolute;
+            top: 140px;
+            right:20px; 
+            background-color:rgb(88, 77, 77);
+        }
+        .right-box h3{
+            background-color: rgb(230, 230, 89);
+        }
+        .right-box p{
+            color: rgb(218, 214, 214);
+        } 
+    .main-container .mittel-box img {
+            width: 5%; 
+            position:relative;
+            top: 50px;
+            left: 15px;
+        } 
+        .mittel-box p{
+
+            position: relative;
+            left: 100PX;
+            top: 10PX;
+
+            color:rgb(230, 230, 89) ;
+        }
+         .flex-container{
+             position: relative;
+             left: 50px;
+          margin-top: 30px;
+             display: flex;
+             
+            
+            
+         }
+         .flex-container > div{
+             background-color: rgb(204, 185, 185);
+             margin: 10px;
+             padding: 20px;
+         } 
+         .flex-container img{
+             width: 300px;
+             height: 20vh;
+            position:relative;
+            left: 0px;
+            
+
+         }
+         .flex-container p{
+        font-size:13px;
+        overflow: auto;
+         }
+         .flex-container  h6{
+             text-align: center;
+             background-color: rgb(230, 230, 89);
+         }
+
+    </style>
+        
+</head>
+<body>
+    <div class="header"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpLOSk08vvkIK0ANRi-KIBxUNWHR83Q6BPA&usqp=CAU" alt="logo">
+        <h3>Call Toll FREE 1-800-772-58</h3>
+   
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#market">MARKET SEGMENTS</a>
+        <a href="#servce">SERVICE</a>
+        <a href="#PRODUCTS">PRODUCTS</a>
+        <a href="#PROMOTIONS">PROMOTIONS</a>
+        <a href="#MARKET AREA">MARKET AREA</a>
+        <a href="#Market INGORMATION">MARKET INGORMATION</a>
+    </nav>
+</div>
+
+    <div class="main-container">
+
+
+        <div class="left-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJe6fLY3zFde2naRhbMdhhsSVqnEr2Dzz7hA&usqp=CAU" alt="Autmotive">
+            
+        
+
+        </div>
+        <div class="right-box">
+            <h3>ABOUT PPC LUBRICANTS</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem explicabo, accusantium aut natus quis mollitia animi dolore hic quia earum odio iste error laudantium similique officia ab quisquam quod.
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, laborum voluptas reprehenderit corrupti sequi, blanditiis est unde odit dignissimos quis quidem! Ab maxime ea veniam quidem, inventore id doloremque esse.
+            </p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem explicabo, accusantium aut natus quis mollitia animi dolore hic quia earum odio iste error laudantium similique officia ab quisquam quod.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, laborum voluptas reprehenderit corrupti sequi, blanditiis est unde odit 
+
+
+        </div> 
+        <!--here ist img and the text 40 Yares------------>
+         <div class="mittel-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpLOSk08vvkIK0ANRi-KIBxUNWHR83Q6BPA&usqp=CAU" alt="logo1"> <P>40YAERS OF EXPERIENCE IN LUBRCATION</P> 
+        </div>
+
+        <div class="flex-container">
+        
+            <div>
+                <h6>AUTOMOTIVE</h6>
+                    <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0b21vdGl2ZSUyMGluZHVzdHJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="1">
+                    <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Temporibus optio beatae maxime <br> aut sequi ipsa nulla voluptates! Molestiae consequuntur, <br> eos consequatur et corporis omnis optio labore veniam, <br> distinctio dolorum facilis.</p>
+                    
+                    
+
+                </div>
+                <div>
+                    <h6>AUTOMOTIVE</h6>
+                <img src="https://images.unsplash.com/photo-1566930665082-4ae9dbbb5b6b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXV0b21vdGl2ZSUyMGluZHVzdHJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="2">
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Temporibus optio beatae maxime <br> aut sequi ipsa nulla voluptates! Molestiae consequuntur, <br> eos consequatur et corporis omnis optio labore veniam, <br> distinctio dolorum facilis.</p>
+               
+
+                </div>
+                <div class="automotive">
+                    <h6>AUTOMOTIVE</h6>
+                <img src="https://images.unsplash.com/photo-1607398027660-bfbb54b28815?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGF1dG9tb3RpdmUlMjBpbmR1c3RyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="3">
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Temporibus optio beatae maxime <br> aut sequi ipsa nulla voluptates! Molestiae consequuntur, <br> eos consequatur et corporis omnis optio labore veniam, <br> distinctio dolorum facilis.</p>
+                
+
+                </div>
+                <div>
+                    <h6>AUTOMOTIVE</h6>
+                    <img src="https://images.unsplash.com/photo-1522322512347-a0e57fd1744c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGF1dG9tb3RpdmUlMjBpbmR1c3RyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="4">
+                    <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Temporibus optio beatae maxime <br> aut sequi ipsa nulla voluptates! Molestiae consequuntur, <br> eos consequatur et corporis omnis optio labore veniam, <br> distinctio dolorum facilis.</p>
+
+
+                </div>
+      </div> 
+
+
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+     
+        h1{
+            margin-bottom: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>HTML Form</h1> 
+    <!-- input type:text -->
+    <form>
+        <label for="fname">First Name </label>
+        <input type="text" name="fname" id="fname" required><br><br>
+        <label for="password">Password </label>
+        <input type="password" name="password" id="password" required><br><br>
+        <input type="submit" value="send"><br><hr>
+    </form>
+
+
+ <!-- input type:text  other Method-->
+<h1>HTML Form1</h1> 
+<form>
+    <input type="text" name="fname" id="fname" placeholder="First Name"><br><br>
+
+    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+    <input type="submit" value="send"><br><hr>
+</form><br>
+
+ <!-- input type:radio -->
+<form>
+<input type="radio" name="gender" id="male" value="male">
+<label for="male">male</label>
+
+<input type="radio" name="gender" id="female" value="female">
+<label for="female">female</label>
+
+<input type="radio" name="gender" id="other" value="other" checked> <!--checked defult-->
+<label for="other">other</label>
+
+</form><br><hr>
+
+<!-- input type:checkbox -->
+
+<form>
+
+<input type="checkbox" name="veichle1" id="car" value="car">
+<label for="car">I have a Car </label><br>
+
+<input type="checkbox" name="veichle2" id="bike" value="bike">
+<label for="bike">I have a Bike </label><br>
+
+<input type="checkbox" name="veichle3" id="boat" value="boat">
+<label for="boat">I have a boat </label><br><br>
+
+</form><br>
+
+
+<!-- pupdrop liste by using select -->
+
+
+<label>Choose you Car:</label>
+
+<select size="3" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="bmw">BMW</option>
+    <option value="fiat">Fiat</option>
+    <option value="saab" selected>Saab</option>
+</select><br><br>
+<hr>
+
+<!--Textarea-->   
+<!-- cols=width,  row=  how many lines-->
+
+<textarea name="textarea" id="--Textarea--" cols="30" rows="10">hallo World!!
+</textarea>
+<br><br>
+
+<!--button-->
+
+<button type="button" onclick=" alert('Thank you')">
+click ME
+</button>
+<br><br>
+
+<!--Fielset area-->
+<form>
+    <fieldset>
+            <legend>My Personal info</legend> 
+
+            <label for="text">Full Name</label>
+            <input type="text" name="text" id="text"><br>
+            <label for="email">Email Adresse</label>
+            <input type="email" name="email" id="email">
+
+    </fieldset> 
+</form>
+<br><br>
+
+<!--datalist-->
+
+    <form action="Res.html" target=_blank>   
+
+      <input list="browsers">
+
+        <datalist id="browsers" name="browsers">
+            <option value="Internet EXplorer"></option>
+            <option value="Chrom v1"></option>
+            <option value="Opera"></option>
+            <option value="Firefox"></option>
+            <option value="dolphine"></option>
+            <option value="Chrom v2"></option>
+
+
+        </datalist>
+        <br><br>
+
+
+        <!-- Submit button-->
+
+      <input type="submit" value="send">
+
+    </form>
+
+
+
+</body>
+
+   
+
+    
+</body>
+</html>
